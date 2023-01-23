@@ -22,7 +22,7 @@ const Navigation = () => {
               Projects
             </Nav.Link>
             <Nav.Link href="/contact" className="text-white">
-              Contacy
+              Contact
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

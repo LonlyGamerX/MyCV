@@ -25,16 +25,3 @@ port = 5123
 # If that still fails, it will try Visual Studio Code, then Sublime Text, then a few others
 # This is used by Bun.openInEditor()
 editor = "vscode"
-
-# List of editors:
-# - "subl", "sublime"
-# - "vscode", "code"
-# - "textmate", "mate"
-# - "idea"
-# - "webstorm"
-# - "nvim", "neovim"
-# - "vim","vi"
-# - "emacs"
-# - "atom"
-# If you pass it a file path, it will open with the file path instead
-# It will recognize non-GUI editors, but I don't think it will work yet
