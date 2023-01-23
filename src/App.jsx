@@ -1,21 +1,27 @@
-import "./App.css";
-import logo from "./logo.svg";
+import "./sass/App.scss";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Navigation from "./components/Navigation";
+
+//Pages
+import Home from "./pages/Home";
+import Profile from "./pages/Profile";
+import Project from "./pages/Project";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
     <div className="App" role="main">
-      <article className="App-article">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h3>Welcome to React!</h3>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </article>
+      <Router>
+        <Navigation />
+        <section>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/projects" element={<Project />} />
+            <Route path="/contacts" element={<Contact />} />
+          </Routes>
+        </section>
+      </Router>
     </div>
   );
 }

@@ -6,11 +6,6 @@ logLevel = "debug"
 publicDir = "public"
 # external = ["jquery"]
 
-[bundle]
-saveTo = "node_modules.bun"
-# Don't need this if `framework` is set, but showing it here as an example anyway
-entryPoints = ["./src/index.jsx"]
-
 [bundle.packages]
 # If you're bundling packages that do not actually live in a `node_modules` folder or do not have the full package name in the file path, you can pass this to bundle them anyway
 "@bigapp/design-system" = true
@@ -19,12 +14,6 @@ entryPoints = ["./src/index.jsx"]
 # Change the default port from 3000 to 5000
 # Also inherited by Bun.serve
 port = 5123
-
-[define]
-# Replace any usage of "process.env.bagel" with the string `lox`.
-# The values are parsed as JSON, except single-quoted strings are supported and `'undefined'` becomes `undefined` in JS.
-# This will probably change in a future release to be just regular TOML instead. It is a holdover from the CLI argument parsing.
-"process.env.bagel" = "'lox'"
 
 [loaders]
 # When loading a .bagel file, run the JS parser
