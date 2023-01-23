@@ -1,6 +1,6 @@
 {
-  "short_name": "Scott CV/Portfolio",
-  "name": "scott zangenberg cv/portfolio",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
