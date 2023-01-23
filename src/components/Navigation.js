@@ -1,14 +1,12 @@
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import { TfiFacebook } from "react-icons/tfi";
-import { GrGooglePlus } from "react-icons/gr";
-import { BsTwitter, BsInstagram } from "react-icons/bs";
 
 const Navigation = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
+      <Navbar.Brand href="/">Scott Zangenberg</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
