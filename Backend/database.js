@@ -47,35 +47,35 @@ export async function deleteInfo(id) {
 }
 
 // User DB
-export async function getUser() {
-  const [rows] = await pool.query("SELECT * FROM `User`");
+export async function getUsers() {
+  const [rows] = await pool.query("SELECT * FROM `users`");
   return rows;
 }
 
-export async function getUserId(id) {
-  const [rows] = await pool.query("SELECT * FROM `User` WHERE `id` = ?", [id]);
+export async function getUsersId(id) {
+  const [rows] = await pool.query("SELECT * FROM `users` WHERE `id` = ?", [id]);
   return rows[0];
 }
 
-export async function createUser(username, email, password) {
+export async function createUsers(username, email, password) {
   const [rows] = await pool.query(
-    "INSERT INTO `User` (`username`, `email`, `password`) VALUES (?, ?, ?)",
+    "INSERT INTO `users` (`username`, `email`, `password`) VALUES (?, ?, ?)",
     [username, email, password]
   );
   const id = rows.insertId;
   return await getUserId(id);
 }
 
-export async function updateUser(id, username, email, password) {
+export async function updateUsers(id, username, email, password) {
   const [rows] = await pool.query(
-    "UPDATE `User` SET `username` = ?, `email` = ?, `password` = ? WHERE `id` = ?",
+    "UPDATE `users` SET `username` = ?, `email` = ?, `password` = ? WHERE `id` = ?",
     [username, email, password, id]
   );
   return await getUserId(id);
 }
 
-export async function deleteUser(id) {
-  const [rows] = await pool.query("DELETE FROM `User` WHERE `id` = ?", [id]);
+export async function deleteUsers(id) {
+  const [rows] = await pool.query("DELETE FROM `users` WHERE `id` = ?", [id]);
   const deleteText = "Data deleted successfully";
   return deleteText;
 }

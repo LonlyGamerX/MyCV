@@ -4,13 +4,14 @@ import {
   createInfo,
   updateInfo,
   deleteInfo,
-  getUser,
-  getUserId,
-  createUser,
-  updateUser,
-  deleteUser,
+  getUsers,
+  getUsersId,
+  createUsers,
+  updateUsers,
+  deleteUsers,
 } from "./database.js";
 import express from "express";
+import bycrpt from "bcrypt";
 import fs from "fs";
 import https from "https";
 import http from "http";
@@ -24,6 +25,7 @@ const SecurePort = 5443;
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static("public/images"));
 
 // Start server, secure and unsecure
 // http.createServer(app).listen(UnsecurePort);
@@ -77,32 +79,58 @@ app.delete("/info/:id", async (req, res) => {
 });
 
 // User
-app.get("/user", async (req, res) => {
-  const user = await getUser();
+app.get("/users", async (req, res) => {
+  const user = await getUsers();
   res.send(user);
 });
 
-app.get("/user/:id", async (req, res) => {
+app.get("/users/:id", async (req, res) => {
   const id = req.params.id;
-  const userID = await getUserId(id);
+  const userID = await getUsersId(id);
   res.send(userID);
 });
 
-app.post("/user", async (req, res) => {
+app.post("/users", async (req, res) => {
+  try {
+    const { username, email, password } = req.body;
+    const salt = await bycrpt.genSalt(10);
+    const hashedPassword = await bycrpt.hash(password, salt);
+    const user = await createUsers(username, email, hashedPassword);
+    res.send(user);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ message: "Something went wrong" });
+  }
+});
+
+app.put("/users/:id", async (req, res) => {
+  const id = req.params.id;
   const { username, email, password } = req.body;
-  const user = await createUser(username, email, password);
+  const user = await updateUsers(id, username, email, password);
   res.send(user);
 });
 
-app.put("/user/:id", async (req, res) => {
+app.delete("/users/:id", async (req, res) => {
   const id = req.params.id;
-  const { username, email, password } = req.body;
-  const user = await updateUser(id, username, email, password);
+  const user = await deleteUsers(id);
   res.send(user);
 });
 
-app.delete("/user/:id", async (req, res) => {
-  const id = req.params.id;
-  const user = await deleteUser(id);
-  res.send(user);
+// Login
+app.post("/users/login", async (req, res) => {
+  const { email, password } = req.body;
+  const user = await getUsers();
+  const userFound = user.find((user) => user.email === email);
+  if (userFound) {
+    const validPassword = await bycrpt.compare(password, userFound.password);
+    if (validPassword) {
+      res.send("Login successful");
+    } else {
+      res.status(400).json({ message: "Invalid password" });
+    }
+  } else {
+    res
+      .status(404)
+      .json({ message: "Can not find the user you are looking for!" });
+  }
 });
