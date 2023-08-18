@@ -10,6 +10,10 @@ import Logout from "./components/Logout";
 
 // Pages
 import Home from "./pages/Home";
+import Bio from "./pages/Bio";
+import Projects from "./pages/Projects";
+import Experience from "./pages/Experience";
+import Contact from "./pages/Contact";
 import LoginUser from "./pages/LoginUser";
 import Error404 from "./pages/Error404";
 import NotAdmin from "./pages/NotAdmin";
@@ -42,29 +46,31 @@ function App() {
   return (
     <div className="App">
       <Router>
-        {IsAdmin ? (
-          <AdminNavigation />
-        ) : user ? (
-          <LoginNavigation />
-        ) : (
-          <Navigation />
-        )}
-        <section>
-          <Routes>
-            <Route index path="/" element={<Home />} />
-            <Route
-              path="/login"
-              element={<LoginUser setUser={setUser} setIsAdmin={setIsAdmin} />}
-            />
-            <Route path="/logout" element={<Logout />} />
-            <Route path="/notAdmin" element={<NotAdmin />} />
-            {/* Admin Sites */}
-            <Route path="/admin/dashboard" element={<Dashboard />} />
-            <Route path="/admin/createuser" element={<CreateUser />} />
-            {/* Error Page */}
-            <Route path="*" element={<Error404 />} />
-          </Routes>
-        </section>
+        <div className="d-flex">
+          {IsAdmin && user ? <AdminNavigation /> : <Navigation />}
+          <section className="flex-grow-1 p-3 content">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/bio" element={<Bio />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/experience" element={<Experience />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route
+                path="/login"
+                element={
+                  <LoginUser setUser={setUser} setIsAdmin={setIsAdmin} />
+                }
+              />
+              <Route path="/logout" element={<Logout />} />
+              <Route path="/notAdmin" element={<NotAdmin />} />
+              {/* Admin Sites */}
+              <Route path="/admin/dashboard" element={<Dashboard />} />
+              <Route path="/admin/createuser" element={<CreateUser />} />
+              {/* Error Page */}
+              <Route path="*" element={<Error404 />} />
+            </Routes>
+          </section>
+        </div>
       </Router>
     </div>
   );

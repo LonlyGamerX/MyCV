@@ -1,0 +1,20 @@
+@import "./_variables.scss";
+
+@media (max-width: $small-screen) {
+}
+
+@media (min-width: $medium-screenA) and (max-width: $medium-screenB) {
+  .sidebar {
+    left: -250px; /* Hide sidebar on small screens */
+  }
+
+  .sidebar.expanded {
+    left: 0;
+  }
+}
+
+@media (min-width: $large-screenA) and (max-width: $large-screenB) {
+}
+
+@media (min-width: $Extra-large-screenA) and (max-width: $Extra-large-screenB) {
+}

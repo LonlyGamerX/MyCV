@@ -1,23 +1,28 @@
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import { Nav } from "react-bootstrap";
 
-function Navigation() {
+const Navigation = () => {
   return (
-    <Navbar className="navbar navCustom shadow-lg" bg="dark" expand="lg">
-      <Navbar.Brand className="text-white me-5">Insert web Name</Navbar.Brand>
-      <Navbar.Toggle />
-      <Navbar.Collapse>
-        <Nav>
-          <Nav.Link href="/" className="text-white">
-            Home
-          </Nav.Link>
-          <Nav.Link href="/login" className="text-white">
-            Login
-          </Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+    <Nav className="sidebar">
+      <div className="position-sticky">
+        <h3 className="text-center my-4 me-2 ms-2">Scott Zangenberg</h3>
+        <Nav.Item>
+          <Nav.Link href="/">Home</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/bio">Bio</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/projects">Projects</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/experience">Experience</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/contact">Contact</Nav.Link>
+        </Nav.Item>
+      </div>
+    </Nav>
   );
-}
+};
 
 export default Navigation;

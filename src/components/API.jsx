@@ -2,7 +2,6 @@ import axios from "axios";
 
 const port = 5333;
 const urlendpoint = "http://localhost:" + port;
-const aboutEP = "/about";
 const loginEP = "/login/login";
 const userEP = "/user/admin";
 
