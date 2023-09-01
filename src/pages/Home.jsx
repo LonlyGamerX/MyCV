@@ -22,6 +22,7 @@ const Home = () => {
                 Favorite Games: Halo 4, Minecraft, League of legends and Destiny
                 2
               </li>
+              <li>Dream job: playing videogames for a living</li>
             </ul>
           </div>
         </section>
