@@ -1,4 +1,3 @@
-
 const NotAdmin = () => {
   return (
     <div className="text-center">
