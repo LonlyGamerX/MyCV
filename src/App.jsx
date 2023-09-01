@@ -5,12 +5,10 @@ import Cookies from "js-cookie";
 // Components
 import Navigation from "./components/Navigation";
 import AdminNavigation from "./components/AdminNavigation";
-import LoginNavigation from "./components/LoginNavigation";
 import Logout from "./components/Logout";
 
 // Pages
 import Home from "./pages/Home";
-import Bio from "./pages/Bio";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
@@ -51,7 +49,6 @@ function App() {
           <section className="flex-grow-1 p-3 content">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/bio" element={<Bio />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/experience" element={<Experience />} />
               <Route path="/contact" element={<Contact />} />
