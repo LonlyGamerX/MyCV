@@ -13,7 +13,7 @@ const Home = () => {
           <div className="box-info">
             <h1 className=" text-center mb-3">Info</h1>
             <ul>
-              <li>Full Name: Scott Pirrer Damagaard Zangenberg</li>
+              <li>Full Name: Scott Pierre Damagaard Zangenberg</li>
               <li>Birthday: August 1st, 2001</li>
               <li>Favorite colors: cyan & black</li>
               <li>Hobbies: playing videogames & building Legos</li>
@@ -31,15 +31,15 @@ const Home = () => {
         <h3 className="me-2">Short bio</h3>
         <div className="box-info p-2">
           <p>
-            I was born in Denmark on the 1st of August 2001 in [insert
-            /location]. My memory has always been hazy regarding my early years.
-            At the age of [N/A], I relocated to Spain with my two older sisters
-            to stay with our grandmother while our parents prepared to move from
-            Denmark. Our grandma resided in a trailer park-style community,
-            where we had the chance to meet diverse people and enjoy some
-            excitement while waiting for our parents to join us in Spain. Once
-            they arrived, we went through several relocations until we settled
-            in Mijas Pueblo on the outskirts in the south of Spain.
+            I was born in Denmark on the 1st of August 2001 in Glostrup. My
+            memory has always been hazy regarding my early years. At the age of
+            5, I relocated to Spain with my two older sisters to stay with our
+            grandmother while our parents prepared to move from Denmark. Our
+            grandma resided in a trailer park-style community, where we had the
+            chance to meet diverse people and enjoy some excitement while
+            waiting for our parents to join us in Spain. Once they arrived, we
+            went through several relocations until we settled in Mijas Pueblo on
+            the outskirts in the south of Spain.
             <br />
             <br />
             Afterward, I attended Sunny View School, which, in my opinion,
