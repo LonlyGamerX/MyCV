@@ -1,10 +1,12 @@
+import scottProfilePic from "../imgs/scottProfilePic.png";
+
 const Home = () => {
   return (
     <>
       <div className="row">
         <section className="ms-5 col-lg-4">
           <img
-            src="https://via.placeholder.com/300"
+            src={scottProfilePic}
             alt="placeholder profile pic"
             className="image-fluid img-thumbnail rounded-circle"
           />
