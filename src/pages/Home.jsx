@@ -1,4 +1,4 @@
-import scottProfilePic from "../imgs/scottProfilePic.png";
+import scottProfilePic from "../imgs/picofme.png";
 
 const Home = () => {
   return (
@@ -24,7 +24,7 @@ const Home = () => {
                 Favorite Games: Halo 4, Minecraft, League of legends and Destiny
                 2
               </li>
-              <li>Dream job: playing videogames for a living</li>
+              <li>Dream job: working for Riot Games, Lego or Google</li>
             </ul>
           </div>
         </section>

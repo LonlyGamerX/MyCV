@@ -1,11 +1,17 @@
+.dark-mode {
+  background-color: black;
+  color: cyan;
+}
+
 .dark-mode .sidebar {
   background-color: black;
+  color: cyan;
 }
 
 .dark-mode .nav-link {
   color: cyan !important;
 }
 
-.dark-mode body {
-    background-color: black !important;
+.dark-mode li {
+  color: cyan;
 }
