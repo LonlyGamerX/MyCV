@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <>
       <div className="row">
-        <section className="ms-5 col-lg-4">
+        <section className="ms-5 mt-4 col-lg-4">
           <img
             src={scottProfilePic}
             alt="placeholder profile pic"
@@ -44,8 +44,8 @@ const Home = () => {
             the outskirts in the south of Spain.
             <br />
             <br />
-            Afterward, I attended Sunny View School, which, in my opinion,
-            wasn't the best due to frequent bullying. After finishing year [7],
+            Afterward, I attended Sunny View School which followed, which, in my opinion,
+            wasn't the best due to frequent bullying. After finishing year 6,
             I switched to The Ark Christian School, which I found to be a
             significant improvement both teachers and students. There, I
             completed my IGCSE. Subsequently, I returned to Denmark, both to
