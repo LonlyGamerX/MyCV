@@ -19,21 +19,23 @@ const Projects = () => {
             className="col-lg-4 me-lg-3 box-info codeBG pointerMouse"
             onClick={() => handleClick(projects.cv)}
           >
-            <h3 className="text-white text-center px-5 py-5">Project Web</h3>
+            <h3 className="text-white text-center px-5 py-5">My CV Website</h3>
           </section>
           {/* Project 2 */}
           <section
             className="col-lg-4 me-lg-3 box-info codeBG pointerMouse"
             onClick={() => handleClick(projects.exam)}
           >
-            <h3 className="text-white text-center px-5 py-5">Project Web</h3>
+            <h3 className="text-white text-center px-5 py-5">Exam July 2023</h3>
           </section>
           {/* Project 3 */}
           <section
             className="col-lg-4 me-lg-3 box-info codeBG pointerMouse"
             onClick={() => handleClick(projects.McServer)}
           >
-            <h3 className="text-white text-center px-5 py-5">Project Web</h3>
+            <h3 className="text-white text-center px-5 py-5">
+              MC Server template
+            </h3>
           </section>
         </div>
         <div className="mt-3 row">
@@ -42,7 +44,9 @@ const Projects = () => {
             className="col-lg-4 me-lg-3 box-info codeBG pointerMouse"
             onClick={() => handleClick(projects.none)}
           >
-            <h3 className="text-white text-center px-5 py-5">Project Web</h3>
+            <h3 className="text-white text-center px-5 py-5">
+              Example Project Web
+            </h3>
           </section>
         </div>
       </div>
