@@ -17,9 +17,8 @@ function App() {
     <div className="App">
       <I18nextProvider i18n={i18n}>
         <Router>
-          <div className="d-flex">
             <Navigation />
-            <section className="flex-grow-1 p-3 content">
+            <section className="p-3 content">
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/projects" element={<Projects />} />
@@ -29,7 +28,6 @@ function App() {
                 <Route path="*" element={<Error404 />} />
               </Routes>
             </section>
-          </div>
         </Router>
       </I18nextProvider>
     </div>

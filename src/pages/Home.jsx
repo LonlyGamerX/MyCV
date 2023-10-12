@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <>
       <div className="row">
-        <section className="ms-lg-5 mt-5 col-lg-5">
+        <section className="ms-auto mt-5 col-lg-4">
           <img
             src={scottProfilePic}
             alt="placeholder profile pic"

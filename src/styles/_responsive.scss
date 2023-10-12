@@ -1,9 +1,9 @@
 @import "./_variables.scss";
 
-@media (max-width: $small-screen) {
+@media (max-width: $extra-small-screen) {
 }
 
-@media (min-width: $medium-screenA) and (max-width: $medium-screenB) {
+@media (max-width: $small-screen) {
   .sidebar {
     left: -250px; /* Hide sidebar on small screens */
   }
@@ -11,10 +11,34 @@
   .sidebar.expanded {
     left: 0;
   }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .content {
+    margin-left: 0 !important;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+  .nav {
+    display: block;
+  }
 }
 
-@media (min-width: $large-screenA) and (max-width: $large-screenB) {
+@media (max-width: $medium-screen) {
+  .desktop-nav {
+    display: none;
+  }
+  .content {
+    margin-left: 0px !important;
+  }
+  .mobile-nav {
+    display: flex !important;
+  }
 }
 
-@media (min-width: $Extra-large-screenA) and (max-width: $Extra-large-screenB) {
+@media (max-width: $large-screen) {
 }

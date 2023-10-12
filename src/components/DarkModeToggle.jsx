@@ -28,7 +28,7 @@ const DarkModeToggle = () => {
   return (
     <button
       onClick={toggleDarkMode}
-      className={`toggle-button ${darkMode ? "dark" : ""} ms-2 mt-3`}
+      className={`toggle-button ${darkMode ? "dark" : ""} ms-lg-3 m-auto mb-3 mt-3`}
     ></button>
   );
 };

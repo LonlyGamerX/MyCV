@@ -1,22 +1,7 @@
-// Color Scheme
-// ------------
-
-
-//Light Mode
-$primary-lt-color: #007bff;
-$secondary-lt-color: #6c757d;
-
-//Dark Mode
-$primary-dk-color: #007bff;
-$secondary-dk-color: #6c757d;
-
 $font-family: -apple-system, BlinkMacSystemFont, "Themify", Arial, sans-serif;
 
 // Breakpoints
-$small-screen: 576px;
-$medium-screenA: 577px;
-$medium-screenB: 768px;
-$large-screenA: 769px;
-$large-screenB: 992px;
-$Extra-large-screenA: 993px;
-$Extra-large-screenB: 1200px;
+$extra-small-screen: 576px;
+$small-screen: 768px;
+$medium-screen: 992px;
+$large-screen: 1200px;
