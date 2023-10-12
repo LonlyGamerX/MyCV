@@ -45,11 +45,17 @@ const Home = () => {
               <li onClick={() => handleClick(socialMedia.facebook)}>
                 Facebook (inactive)
               </li>
-              <li onClick={() => handleClick(socialMedia.github)}>Github</li>
-              <li onClick={() => handleClick(socialMedia.twitch)}>Twitch</li>
-              <li onClick={() => handleClick(socialMedia.youtube)}>Youtube</li>
+              <li onClick={() => handleClick(socialMedia.github)}>
+                Github: LonlyGamerX
+              </li>
+              <li onClick={() => handleClick(socialMedia.twitch)}>
+                Twitch: LonlyGamerX
+              </li>
+              <li onClick={() => handleClick(socialMedia.youtube)}>
+                Youtube: LonlyGamerX
+              </li>
               <li onClick={() => handleClick(socialMedia.linkedin)}>
-                LinkedIn
+                LinkedIn: Scott Zangenberg
               </li>
             </ul>
           </div>
