@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { I18nextProvider } from 'react-i18next';
+import { I18nextProvider } from "react-i18next";
 
 // Components
 import Navigation from "./components/Navigation";
-import i18n from './components/i18n';
+import i18n from "./components/i18n";
 
 // Pages
 import Home from "./pages/Home";
@@ -12,9 +12,7 @@ import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
 import Error404 from "./pages/Error404";
 
-
 function App() {
-
   return (
     <div className="App">
       <I18nextProvider i18n={i18n}>

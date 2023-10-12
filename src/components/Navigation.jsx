@@ -14,7 +14,6 @@ const Navigation = () => {
     <Nav className="sidebar d-flex flex-column">
       <div className="position-sticky">
         <h3 className="text-center my-4 me-3 ms-2 test2">Scott Zangenberg</h3>
-
         <Nav.Item>
           <Nav.Link href="/" className="pointerMouse">
             {t("navbar.home")}
