@@ -4,18 +4,6 @@ import { useTranslation } from "react-i18next";
 const Home = () => {
   const { t } = useTranslation();
 
-  const handleClick = (url) => {
-    window.location.href = url;
-  };
-
-  const socialMedia = {
-    github: "https://github.com/LonlyGamerX",
-    linkedin: "https://www.linkedin.com/in/scottzangenberg/",
-    twitch: "https://www.twitch.tv/lonlygamerx",
-    youtube: "https://www.youtube.com/channel/UCv0CqbjfUOsR6sefB_bp1Tg",
-    facebook: "https://www.facebook.com/LonlyGamerX/",
-  };
-
   return (
     <>
       <div className="row">
@@ -30,33 +18,15 @@ const Home = () => {
           <div className="box-info">
             <h1 className="text-center mb-3 text-decoration-underline">Info</h1>
             <ul className="txt-md text-center">
+              <li>{t("title")}</li>
               <li>{t("name")}</li>
               <li>{t("birthday")}</li>
               <li>{t("colors")}</li>
               <li>{t("hobbies")}</li>
               <li>{t("lanuages")}</li>
+              <li>{t("programming")}</li>
               <li>{t("games")}</li>
               <li>{t("dream-job")}</li>
-            </ul>
-            <h2 className="mt-3 text-center text-decoration-underline">
-              Social Media
-            </h2>
-            <ul className="txt-md text-center pointerMouse">
-              <li onClick={() => handleClick(socialMedia.facebook)}>
-                Facebook (inactive)
-              </li>
-              <li onClick={() => handleClick(socialMedia.github)}>
-                Github: LonlyGamerX
-              </li>
-              <li onClick={() => handleClick(socialMedia.twitch)}>
-                Twitch: LonlyGamerX
-              </li>
-              <li onClick={() => handleClick(socialMedia.youtube)}>
-                Youtube: LonlyGamerX
-              </li>
-              <li onClick={() => handleClick(socialMedia.linkedin)}>
-                LinkedIn: Scott Zangenberg
-              </li>
             </ul>
           </div>
         </section>

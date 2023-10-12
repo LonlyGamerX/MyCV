@@ -17,5 +17,7 @@
     "projects": "Projects",
     "experience": "Experience",
     "contact": "Contact"
-  }
+  },
+  "title": "Title: Frontend Web Developer",
+  "programming": "Programming lanuages: HTML, CSS, JavaScript, React"
 }
