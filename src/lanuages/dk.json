@@ -1,0 +1,23 @@
+{
+  "name": "Fulde navn: Scott Pierre Damagaard Zangenberg",
+  "birthday": "Fødselsdag: 1. august 2001",
+  "colors": "Yndlingsfarver: cyan og sort",
+  "hobbies": "Hobbyer: at spille videospil og bygge lego",
+  "lanuages": "Sprog: Engelsk, dansk og lidt spansk",
+  "games": "Yndlingsspil: Halo 4, Minecraft, League of legends og Destiny 2",
+  "dream-job": "Drømmejob: Arbejder for Riot Games, Lego eller Google",
+  "aboutMe": {
+    "p1": "Jeg er født i Danmark den 1. august 2001 i Glostrup. Min hukommelse har altid været sløret med hensyn til mine tidlige år. I en alder af 5 flyttede jeg til Spanien med mine to ældre søstre for at bo hos vores bedstemor, mens vores forældre forberedte sig på at flytte fra Danmark. Vores bedstemor boede i et samfund i trailerpark-stil, hvor vi havde chancen for at møde forskellige mennesker og nyde lidt spænding, mens vi ventede på, at vores forældre ville slutte sig til os i Spanien. Da de ankom, gennemgik vi flere flytninger, indtil vi slog os ned i Mijas Pueblo i udkanten i det sydlige Spanien.",
+    "p2": "Bagefter gik jeg på Sunny View School, som fulgte, hvilket efter min mening ikke var det bedste på grund af hyppig mobning. Efter at have afsluttet år 6 skiftede jeg til The Ark Christian School, hvilket jeg fandt var en væsentlig forbedring både for lærere og elever. Der gennemførte jeg min IGCSE. Efterfølgende vendte jeg tilbage til Danmark, både for at udforske noget nyt og for at forfølge mine A-niveauer på Skals Kostskole i det nordlige Danmark.",
+    "p3": "Desværre var jeg ikke i stand til at gennemføre mine A-niveauer på grund af en alvorlig sygdom. Det var i denne periode, at min familie og jeg opdagede, at jeg havde to svigtende nyrer, hvilket førte til, at jeg droppede ud på [dato] til en operation for at modtage en ny nyre fra min mor. På grund af dette måtte min familie flytte tilbage til Danmark for at være tættere på hospitalet og mig. Efter min bedring gik jeg på en kostskole i Grenaa, hvor jeg prøvede pre-IB og IB programmer. Desværre kom jeg ikke ind på IB-programmet på grund af højt fravær og dårlige karakterer forårsaget af medicinbivirkninger og stress fra et svækket immunsystem fra nyrebehandling under covid.",
+    "p4": "Jeg følte også, at de fleste af lærerne havde opgivet mig, hvilket yderligere afskrækkede mig fra at studere IB på den skole, selvom jeg ikke havde fejlet før IB. Derfor skiftede jeg til en anden kostskole i samme område kaldet 3D College, hvor jeg tog en grad som Frontend-webudvikler. Efter denne præstation forsøgte jeg at udvide mine færdigheder til backend-udvikling for at blive en fuld-stack webudvikler."
+  },
+  "navbar": {
+    "home": "Hjem",
+    "projects": "Projekter",
+    "experience": "Erfaring",
+    "contact": "Kontakt"
+  },
+  "title": "Titel: Webudvikler",
+  "programming": "Programmeringssprog: HTML, CSS, JavaScript, React"
+}

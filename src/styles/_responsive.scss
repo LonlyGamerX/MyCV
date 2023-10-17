@@ -1,0 +1,44 @@
+@import "./_variables.scss";
+
+@media (max-width: $extra-small-screen) {
+}
+
+@media (max-width: $small-screen) {
+  .sidebar {
+    left: -250px; /* Hide sidebar on small screens */
+  }
+
+  .sidebar.expanded {
+    left: 0;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .content {
+    margin-left: 0 !important;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+  .nav {
+    display: block;
+  }
+}
+
+@media (max-width: $medium-screen) {
+  .desktop-nav {
+    display: none;
+  }
+  .content {
+    margin-left: 0px !important;
+  }
+  .mobile-nav {
+    display: flex !important;
+  }
+}
+
+@media (max-width: $large-screen) {
+}
