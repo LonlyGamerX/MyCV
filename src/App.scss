@@ -21,6 +21,12 @@ body {
   cursor: url("./imgs/cursor2.png"), pointer;
 }
 
+.btnOwn {
+  background-color: black;
+  border-color: white;
+  color: white;
+}
+
 ul {
   list-style-type: none;
 }
@@ -120,11 +126,3 @@ ul {
 }
 
 // Projects
-
-.codeBG {
-  background-image: url("./imgs/codebg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 25%;
-}
