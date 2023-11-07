@@ -1,4 +1,9 @@
 {
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
   "name": "scott-cv",
   "version": "0.1.0",
   "private": true,
@@ -8,6 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
     "bootstrap": "^5.3.0",
+    "emailjs": "^4.0.3",
     "i18next": "^23.5.1",
     "js-cookie": "^3.0.5",
     "react": "^18.2.0",
