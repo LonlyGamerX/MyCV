@@ -29,7 +29,7 @@ const Projects = () => {
         {projectInfo.map((project) => (
           <section
             key={project.key}
-            className="col-lg-3 col-md-3 me-3 box-info pointerMouse mb-2"
+            className="col-lg-3 col-md-3 me-3 boxInfo pointerMouse mb-2"
             onClick={() => handleClick(urlstart + project.key)}
             style={{
               backgroundImage: `url(${project.imgBg})`,
