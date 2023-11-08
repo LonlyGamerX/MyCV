@@ -1,56 +1,50 @@
+// Images
+import cvImg from "../imgs/cv.png";
+import examImg from "../imgs/exam.png";
+import mcserverImg from "../imgs/mcserver.png";
+import serverdashboardImg from "../imgs/serverdashboard.png";
+
 const Projects = () => {
+  // Url handling
   const handleClick = (url) => {
     window.location.href = url;
   };
 
-  const projects = {
-    cv: "https://github.com/LonlyGamerX/MyCV",
-    exam: "https://github.com/LonlyGamerX/exam2023",
-    McServer: "https://github.com/LonlyGamerX/mcservertemplate",
-    none: "https://github.com/LonlyGamerX/",
-  };
+  const urlstart = "https://github.com/LonlyGamerX/";
+
+  const projectInfo = [
+    { key: "cv", label: "My CV Website", imgBg: cvImg },
+    { key: "exam", label: "Exam July 2023", imgBg: examImg },
+    { key: "McServer", label: "MC Server template", imgBg: mcserverImg },
+    {
+      key: "serverdashboard",
+      label: "Self-host Server Dashboard",
+      imgBg: serverdashboardImg,
+    },
+  ];
 
   return (
-    <>
-      <div className="mt-5 ms-5 container">
-        <div className="row">
-          {/* Project 1 */}
+    <div className="mt-5 ms-5 container">
+      <div className="row">
+        {projectInfo.map((project) => (
           <section
-            className="col-lg-4 me-lg-3 box-info codeBG pointerMouse"
-            onClick={() => handleClick(projects.cv)}
+            key={project.key}
+            className="col-lg-3 col-md-3 me-3 boxInfo pointerMouse mb-2"
+            onClick={() => handleClick(urlstart + project.key)}
+            style={{
+              backgroundImage: `url(${project.imgBg})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
           >
-            <h3 className="text-white text-center px-5 py-5">My CV Website</h3>
-          </section>
-          {/* Project 2 */}
-          <section
-            className="col-lg-4 me-lg-3 box-info codeBG pointerMouse"
-            onClick={() => handleClick(projects.exam)}
-          >
-            <h3 className="text-white text-center px-5 py-5">Exam July 2023</h3>
-          </section>
-          {/* Project 3 */}
-          <section
-            className="col-lg-4 me-lg-3 box-info codeBG pointerMouse"
-            onClick={() => handleClick(projects.McServer)}
-          >
-            <h3 className="text-white text-center px-5 py-5">
-              MC Server template
+            <h3 className="text-white text-center px-3 py-3">
+              {project.label}
             </h3>
           </section>
-        </div>
-        <div className="mt-3 row">
-          {/* Project 4 */}
-          <section
-            className="col-lg-4 me-lg-3 box-info codeBG pointerMouse"
-            onClick={() => handleClick(projects.none)}
-          >
-            <h3 className="text-white text-center px-5 py-5">
-              Example Project Web
-            </h3>
-          </section>
-        </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 

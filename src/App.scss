@@ -12,13 +12,19 @@ body {
 }
 
 // Global variables
-.box-info {
+.boxInfo {
   border: 2px solid lightgray;
   border-radius: 10px;
 }
 
 .pointerMouse {
   cursor: url("./imgs/cursor2.png"), pointer;
+}
+
+.btnOwn {
+  background-color: black;
+  border-color: white;
+  color: white;
 }
 
 ul {
@@ -120,11 +126,3 @@ ul {
 }
 
 // Projects
-
-.codeBG {
-  background-image: url("./imgs/codebg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 25%;
-}

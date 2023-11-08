@@ -15,7 +15,7 @@ const Home = () => {
           />
         </section>
         <section className="col-lg-5 m-auto">
-          <div className="box-info">
+          <div className="boxInfo">
             <h1 className="text-center mb-3 text-decoration-underline">Info</h1>
             <ul className="txt-md text-center">
               <li>{t("title")}</li>
@@ -33,7 +33,7 @@ const Home = () => {
       </div>
       <section className="mt-5 col-lg-12">
         <h3 className="me-2">Short bio</h3>
-        <div className="box-info p-2 txt-md">
+        <div className="boxInfo p-2 txt-md">
           <p>
             {t("aboutMe.p1")}
             <br />

@@ -1,6 +1,17 @@
 @import "./_variables.scss";
 
+// Specific breakpoints
+@media (min-width: $extra-small-screen) and (max-width: 618px) {
+  .boxInfo {
+    width: 75%;
+  }
+}
+
+// default breakpoints
 @media (max-width: $extra-small-screen) {
+  .boxInfo {
+    width: 60%;
+  }
 }
 
 @media (max-width: $small-screen) {
