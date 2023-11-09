@@ -7,11 +7,11 @@ const Home = () => {
   return (
     <>
       <div className="row">
-        <section className="ms-auto mt-5 col-lg-4">
+        <section className="ms-auto marginBot mt-5 col-lg-4">
           <img
             src={scottProfilePic}
             alt="placeholder profile pic"
-            className="image-fluid img-thumbnail rounded-circle mb-sm-3 w-auto h-auto"
+            className="image-fluid img-thumbnail rounded-circle mb-sm-3  w-auto h-auto"
           />
         </section>
         <section className="col-lg-5 m-auto">
@@ -32,8 +32,10 @@ const Home = () => {
         </section>
       </div>
       <section className="mt-5 col-lg-12">
-        <h3 className="me-2">Short bio</h3>
         <div className="boxInfo p-2 txt-md">
+          <h3 className="me-2 text-center text-decoration-underline mb-4">
+            Short bio
+          </h3>
           <p>
             {t("aboutMe.p1")}
             <br />
