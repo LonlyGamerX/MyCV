@@ -70,7 +70,7 @@ const Experience = () => {
           Experience
         </h2>
         <section className="col-lg-11 ms-lg-5 text-center">
-          <Table striped bordered hover variant="dark">
+          <Table striped bordered hover variant="dark" size="lg">
             <thead>
               <tr>
                 <th>Programming lanuage</th>
@@ -132,7 +132,7 @@ const Experience = () => {
           <section className="col-lg-3">
             <Button
               variant="outline-secondary"
-              className="ms-md-3 mt-md-2 btnOwn"
+              className="ms-md-3 mt-md-2 mt-sm-2 btnOwn"
               r
               href={examsIgcse}
               download
@@ -142,7 +142,7 @@ const Experience = () => {
           </section>
         </div>
         <section className="col-lg-11 ms-lg-5">
-          <Table striped bordered hover variant="dark">
+          <Table striped bordered hover variant="dark" size="lg">
             <thead>
               <tr>
                 <th>Subject</th>
