@@ -63,7 +63,7 @@ const Contact = () => {
     <>
       <div className="container">
         <div className="row ms-5 mt-5">
-          <section className="boxInfo me-3">
+          <section className="col-lg-12 boxInfo me-3">
             <h2 className="text-center mb-5 text-decoration-underline">
               Personal Info
             </h2>
