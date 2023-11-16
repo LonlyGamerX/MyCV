@@ -40,7 +40,7 @@ const Contact = () => {
     {
       key: "city",
       label: "City",
-      tag: "Vejile",
+      tag: "Vejle",
     },
     {
       key: "address",
