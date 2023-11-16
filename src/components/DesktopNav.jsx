@@ -26,8 +26,8 @@ const DesktopNav = () => {
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/experience" className="pointerMouse">
-              {t("navbar.experience")}
+            <Nav.Link href="/education" className="pointerMouse">
+              {t("navbar.education")}
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>

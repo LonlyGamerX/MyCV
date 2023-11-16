@@ -1,10 +1,42 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import examsIgcse from "../exams/IGCSE.pdf";
+import examsWeb from "../exams/WebUdvikler.pdf";
 import Table from "react-bootstrap/Table";
+import { useTranslation } from "react-i18next";
 
-const Experience = () => {
+const Education = () => {
+  const { t } = useTranslation();
+
   const educationInfo = [
+    {
+      key: "endingexam",
+      subject: t("subject1"),
+      grade: "7",
+      year: "2023",
+      educationSystem: t("eduDanish"),
+    },
+    {
+      key: "danish",
+      subject: t("subject2"),
+      grade: "E",
+      year: "2021",
+      educationSystem: t("eduIB"),
+    },
+    {
+      key: "exam-oral",
+      subject: t("subject3"),
+      grade: "7",
+      year: "2023",
+      educationSystem: t("eduDanish"),
+    },
+    {
+      key: "exam-project",
+      subject: t("subject4"),
+      grade: "4",
+      year: "2023",
+      educationSystem: t("eduDanish"),
+    },
     {
       key: "math",
       subject: "Math",
@@ -61,6 +93,83 @@ const Experience = () => {
       year: "2018",
       educationSystem: "British education system",
     },
+    {
+      key: "css",
+      subject: "Advanced CSS",
+      grade: "02",
+      year: "2023",
+      educationSystem: t("eduDanish"),
+    },
+    {
+      key: "frontend",
+      subject: "Advanced Frontend",
+      grade: "10",
+      year: "2023",
+      educationSystem: t("eduDanish"),
+    },
+    {
+      key: "cms",
+      subject: "CMS",
+      grade: "04",
+      year: "2023",
+      educationSystem: t("eduDanish"),
+    },
+    {
+      key: "dataservices",
+      subject: "Data services and integration",
+      grade: "10",
+      year: "2023",
+      educationSystem: t("eduDanish"),
+    },
+    {
+      key: "renewal",
+      subject: "Professional renewal",
+      grade: "07",
+      year: "2023",
+      educationSystem: t("eduDanish"),
+    },
+    {
+      key: "job",
+      subject: "Job searching",
+      grade: "02",
+      year: "2023",
+      educationSystem: t("eduDanish"),
+    },
+    {
+      key: "development",
+      subject: "Practical web development",
+      grade: "07",
+      year: "2023",
+      educationSystem: t("eduDanish"),
+    },
+    {
+      key: "programming",
+      subject: "Programming",
+      grade: "02",
+      year: "2023",
+      educationSystem: t("eduDanish"),
+    },
+    {
+      key: "project",
+      subject: "Project organization",
+      grade: "07",
+      year: "2023",
+      educationSystem: t("eduDanish"),
+    },
+    {
+      key: "apps",
+      subject: "Apps",
+      grade: "04",
+      year: "2023",
+      educationSystem: t("eduDanish"),
+    },
+    {
+      key: "serverside",
+      subject: "Serverside Programming",
+      grade: "10",
+      year: "2023",
+      educationSystem: t("eduDanish"),
+    },
   ];
 
   return (
@@ -73,10 +182,10 @@ const Experience = () => {
           <Table striped bordered hover variant="dark" size="lg">
             <thead>
               <tr>
-                <th>Programming lanuage</th>
-                <th>Learnt it</th>
-                <th>learning it</th>
-                <th>love it/prefer to use it</th>
+                <th>{t("programminglang")}</th>
+                <th>{t("learnit")}</th>
+                <th>{t("learningit")}</th>
+                <th>{t("likeit")}</th>
               </tr>
             </thead>
             <tbody>
@@ -134,7 +243,7 @@ const Experience = () => {
               variant="outline-secondary"
               className="ms-md-3 mt-md-2 mt-sm-2 btnOwn"
               r
-              href={examsIgcse}
+              href={examsWeb}
               download
             >
               Download my WebExams.pdf
@@ -145,10 +254,10 @@ const Experience = () => {
           <Table striped bordered hover variant="dark" size="lg">
             <thead>
               <tr>
-                <th>Subject</th>
-                <th>Grade</th>
-                <th>Year</th>
-                <th>Education System</th>
+                <th>{t("subjectlang")}</th>
+                <th>{t("gradelang")}</th>
+                <th>{t("yearlang")}</th>
+                <th>{t("educationlang")}</th>
               </tr>
             </thead>
             <tbody>
@@ -168,4 +277,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Education;
