@@ -1,7 +1,7 @@
-import React from "react";
 import Button from "react-bootstrap/Button";
-import examsIgcse from "../exams/IGCSE.pdf";
-import examsWeb from "../exams/WebUdvikler.pdf";
+import examsIgcse from "../downloads/IGCSE.pdf";
+import cvDoc from "../downloads/CV-Portfolio.docx";
+import examsWeb from "../downloads/WebUdvikler.pdf";
 import Table from "react-bootstrap/Table";
 import { useTranslation } from "react-i18next";
 
@@ -179,7 +179,7 @@ const Education = () => {
           Experience
         </h2>
         <section className="col-lg-11 ms-lg-5 text-center">
-          <Table striped bordered hover variant="dark" size="lg">
+          <Table responsive striped bordered hover size="sm" variant="light">
             <thead>
               <tr>
                 <th>{t("programminglang")}</th>
@@ -228,30 +228,39 @@ const Education = () => {
           Education
         </h2>
         <div className="row justify-content-center mb-4">
-          <section className="col-lg-3">
+          <section className="col-lg-2">
             <Button
               variant="outline-secondary"
-              className="ms-md-3 btnOwn"
+              className="ms-3 mt-md-2 mt-sm-2 btnOwn"
               href={examsIgcse}
               download
             >
-              Download my IGCSE.pdf
+              {t("downloadIGCSE")}.pdf
             </Button>
           </section>
           <section className="col-lg-3">
             <Button
               variant="outline-secondary"
-              className="ms-md-3 mt-md-2 mt-sm-2 btnOwn"
-              r
+              className="ms-3 mt-md-2 mt-sm-2 btnOwn"
               href={examsWeb}
               download
             >
-              Download my WebExams.pdf
+              {t("downloadFrontend")}.pdf
+            </Button>
+          </section>
+          <section className="col-lg-3">
+            <Button
+              variant="outline-secondary"
+              className="ms-3 mt-md-2 mt-sm-2 btnOwn"
+              href={cvDoc}
+              download
+            >
+              {t("downloadCV")}.pdf
             </Button>
           </section>
         </div>
         <section className="col-lg-11 ms-lg-5">
-          <Table striped bordered hover variant="dark" size="lg">
+          <Table responsive striped bordered hover size="sm" variant="light">
             <thead>
               <tr>
                 <th>{t("subjectlang")}</th>
