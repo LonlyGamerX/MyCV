@@ -13,8 +13,8 @@ const Projects = () => {
   const urlstart = "https://github.com/LonlyGamerX/";
 
   const projectInfo = [
-    { key: "cv", label: "My CV Website", imgBg: cvImg },
-    { key: "exam", label: "Exam July 2023", imgBg: examImg },
+    { key: "MyCV", label: "My CV Website", imgBg: cvImg },
+    { key: "ExamWeb", label: "Exam July 2023", imgBg: examImg },
     { key: "McServer", label: "MC Server template", imgBg: mcserverImg },
     {
       key: "serverdashboard",

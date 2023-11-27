@@ -18,6 +18,9 @@
     "education": "Uddannelse",
     "contact": "Kontakt"
   },
+  "downloadIGCSE": "Download IGCSE",
+  "downloadFrontend": "Download WebUdvikler",
+  "downloadBackend": "Download WebIntegrator",
   "title": "Titel: Webudvikler",
   "programming": "Programmeringssprog: HTML, CSS, JavaScript, React JS",
   "subjectlang": "Emne",

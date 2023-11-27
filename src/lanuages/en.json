@@ -18,6 +18,9 @@
     "education": "Education",
     "contact": "Contact"
   },
+  "downloadIGCSE": "Download IGCSE",
+  "downloadFrontend": "Download FrontendWebDeveloper",
+  "downloadCV": "Download CV",
   "title": "Title: Frontend Web Developer",
   "programming": "Programming lanuages: HTML, CSS, JavaScript, React JS",
   "subjectlang": "Subject",

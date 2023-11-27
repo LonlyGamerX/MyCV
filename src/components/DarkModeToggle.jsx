@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Cookies from "js-cookie";
 
 const DarkModeToggle = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    const isDarkMode = Cookies.get("darkMode") === "true";
+    const isDarkMode = localStorage.getItem("darkMode") === "true";
     setDarkMode(isDarkMode);
     applyDarkMode(isDarkMode);
   }, []);
@@ -14,7 +13,7 @@ const DarkModeToggle = () => {
     const newDarkMode = !darkMode;
     setDarkMode(newDarkMode);
     applyDarkMode(newDarkMode);
-    Cookies.set("darkMode", newDarkMode, { expires: 365 });
+    localStorage.setItem("darkMode", newDarkMode);
   };
 
   const applyDarkMode = (isDarkMode) => {
@@ -28,7 +27,9 @@ const DarkModeToggle = () => {
   return (
     <button
       onClick={toggleDarkMode}
-      className={`toggle-button ${darkMode ? "dark" : ""} ms-lg-3 m-auto mb-3 mt-3`}
+      className={`toggle-button ${
+        darkMode ? "dark" : ""
+      } ms-lg-3 m-auto mb-3 mt-3`}
     ></button>
   );
 };
