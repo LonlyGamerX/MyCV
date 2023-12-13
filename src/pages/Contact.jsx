@@ -13,26 +13,14 @@ const Contact = () => {
     {
       key: "discord",
       label: "Discord",
-      tag: "lonlygamerx",
-      url: "https://discordapp.com/users/406536304612999188",
+      tag: "lonlygamerx.",
+      url: "https://discordapp.com/users/1181744419423129600",
     },
     {
       key: "linkedin",
       label: "LinkedIn",
       tag: "Scott Zangenberg",
       url: "https://www.linkedin.com/in/scottzangenberg/",
-    },
-    {
-      key: "twitch",
-      label: "Twitch",
-      tag: "LonlyGamerX",
-      url: "https://www.twitch.tv/lonlygamerx",
-    },
-    {
-      key: "youtube",
-      label: "Youtube",
-      tag: "LonlyGamerX",
-      url: "https://www.youtube.com/channel/UCv0CqbjfUOsR6sefB_bp1Tg",
     },
   ];
 
