@@ -3,6 +3,10 @@
   color: cyan;
 }
 
+.dark-mode .pointerMouse {
+  cursor: url("../imgs/cursor2.png"), pointer !important;
+}
+
 .dark-mode .sidebar {
   background-color: black;
   color: cyan;

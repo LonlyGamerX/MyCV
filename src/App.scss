@@ -17,7 +17,7 @@ body {
 }
 
 .pointerMouse {
-  cursor: url("./imgs/cursor2.png"), pointer;
+  cursor: url("./imgs/cursor2.png"), pointer !important;
 }
 
 .btnOwn {

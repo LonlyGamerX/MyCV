@@ -1,4 +1,4 @@
-import Nav from 'react-bootstrap/Nav';
+import Nav from "react-bootstrap/Nav";
 import DarkModeToggle from "./DarkModeToggle";
 import { useTranslation } from "react-i18next";
 import Flag from "react-flagkit";
@@ -41,14 +41,14 @@ const DesktopNav = () => {
           <div
             onClick={() => changeLanguage("en")}
             aria-label="English"
-            className="clickable-flag"
+            className="clickable-flag pointerMouse"
           >
             <Flag country="US" size={32} />
           </div>
           <div
             onClick={() => changeLanguage("dk")}
             aria-label="Dansk"
-            className="clickable-flag"
+            className="clickable-flag pointerMouse"
           >
             <Flag country="DK" size={32} />
           </div>
