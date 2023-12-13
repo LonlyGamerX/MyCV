@@ -29,7 +29,7 @@ const DarkModeToggle = () => {
       onClick={toggleDarkMode}
       className={`toggle-button ${
         darkMode ? "dark" : ""
-      } ms-lg-3 m-auto mb-3 mt-3`}
+      } ms-lg-3 m-auto mb-3 mt-3 pointerMouse`}
     ></button>
   );
 };

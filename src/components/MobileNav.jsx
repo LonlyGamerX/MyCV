@@ -45,14 +45,14 @@ const MobileNav = () => {
             <div
               onClick={() => changeLanguage("en")}
               aria-label="English"
-              className="clickable-flag"
+              className="clickable-flag pointerMouse"
             >
               <Flag country="US" size={32} />
             </div>
             <div
               onClick={() => changeLanguage("dk")}
               aria-label="Dansk"
-              className="clickable-flag"
+              className="clickable-flag pointerMouse"
             >
               <Flag country="DK" size={32} />
             </div>
