@@ -1,7 +1,6 @@
 // Images
 import cvImg from "../imgs/cv.png";
 import examImg from "../imgs/exam.png";
-import mcserverImg from "../imgs/mcserver.png";
 import serverdashboardImg from "../imgs/serverdashboard.png";
 
 const Projects = () => {
