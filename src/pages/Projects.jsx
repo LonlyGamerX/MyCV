@@ -15,7 +15,6 @@ const Projects = () => {
   const projectInfo = [
     { key: "MyCV", label: "My CV Website", imgBg: cvImg },
     { key: "ExamWeb", label: "Exam July 2023", imgBg: examImg },
-    { key: "McServer", label: "MC Server template", imgBg: mcserverImg },
     {
       key: "serverdashboard",
       label: "Self-host Server Dashboard",
