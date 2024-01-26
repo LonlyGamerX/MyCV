@@ -28,12 +28,12 @@ const Contact = () => {
     {
       key: "city",
       label: "City",
-      tag: "Vejle",
+      tag: "Aarhus",
     },
     {
       key: "address",
       label: "Address",
-      tag: "Egtvedvej 91, 6040",
+      tag: "Søren Frichs Vej 23B 3, 8, 8000",
     },
     {
       key: "phone",
