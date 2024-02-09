@@ -190,7 +190,7 @@ const Education = () => {
             </thead>
             <tbody>
               <tr>
-                <td>HTML, CSS, Javascrit</td>
+                <td>HTML, CSS, Javascript</td>
                 <td>✅</td>
                 <td></td>
                 <td></td>
