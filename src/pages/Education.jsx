@@ -1,6 +1,6 @@
 import Button from "react-bootstrap/Button";
 import examsIgcse from "../downloads/IGCSE.pdf";
-import cvDoc from "../downloads/CV-Portfolio.docx";
+import cvDoc from "../downloads/CV-Portfolio.pdf";
 import examsWeb from "../downloads/WebUdvikler.pdf";
 import Table from "react-bootstrap/Table";
 import { useTranslation } from "react-i18next";
